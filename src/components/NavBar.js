@@ -22,11 +22,11 @@ function NavBar() {
                 <NavDropdown title="Catálogo" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3"></NavDropdown.Item>
                 <NavDropdown.Item href="#action4">
-                    Another action
+                    Venta mayorista
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action5">
-                    Something else here
+                    Venta minorista
                 </NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link href="#action2">Contacto</Nav.Link>
