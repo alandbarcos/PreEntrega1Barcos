@@ -1,0 +1,12 @@
+.contCarrito{
+    display: flex;
+    justify-content: flex-end;
+}
+.imgCarrito{
+    width: 30px;
+    height: 30px;
+}
+.contCarrito span{
+    display: flex;
+    align-items: flex-end;
+}

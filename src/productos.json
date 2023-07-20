@@ -1,0 +1,109 @@
+[{
+    "id": 1,
+    "name": "Canopla de 2 Pisos Angry Birds",
+    "price": 1200,
+    "stock": 130,
+    "img": "/img/cartuchera1.jpg",
+    "description": "Cartuchera de cuerina con estampado",
+    "categoria": "Cartucheras"
+},
+{
+    "id": 2,
+    "name": "Mochila Gris",
+    "price": 5400,
+    "stock": 67,
+    "img": "/img/mochila1.jpg",
+    "description": "Mochila básica c/bolsillo externo",
+    "categoria": "Mochilas"
+},
+{
+    "id": 3,
+    "name": "Marcador Sharpie",
+    "price": 500,
+    "stock": 53,
+    "img": "/img/marcador1.jpg",
+    "description": "El clásico Sharpie de trazo fino para colorear",
+    "categoria": "Marcadores"
+},
+{
+    "id": 4,
+    "name": "Carpeta A4 x100 Folios Negra",
+    "price": 2300,
+    "stock": 82,
+    "img": "/img/carpeta1.jpg",
+    "description": "Carpeta tipo fichero",
+    "categoria": "Carpetas"
+},
+{
+    "id": 5,
+    "name": "Canopla Montague",
+    "price": 5000,
+    "stock": 36,
+    "img": "/img/cartuchera2.jpg",
+    "description": "Cartuchera de lona tipo c/compartimientos externos",
+    "categoria": "Cartucheras"
+},
+{
+    "id": 6,
+    "name": "Mochila Gremond",
+    "price": 18000,
+    "stock": 42,
+    "img": "/img/mochila3.jpg",
+    "description": "Mochila c/2 bolsillos externos y 1 interno",
+    "categoria": "Mochilas"
+},
+{
+    "id": 7,
+    "name": "Fibras Faber-Castell",
+    "price": 1200,
+    "stock": 23,
+    "img": "/img/marcador2.jpg",
+    "description": "Contiene 10 unidades para colorear",
+    "categoria": "Marcadores"
+},
+{
+    "id": 8,
+    "name": "Carpeta Arte Bloom",
+    "price": 1700,
+    "stock": 59,
+    "img": "/img/carpeta3.jpg",
+    "description": "Carpeta con ganchos para hoja A4",
+    "categoria": "Carpetas"
+},
+{
+    "id": 9,
+    "name": "Canopla Onix",
+    "price": 900,
+    "stock": 18,
+    "img": "/img/cartuchera3.jpg",
+    "description": "Cartuchera simple, 2 colores disponibles",
+    "categoria": "Cartucheras"
+},
+{
+    "id": 10,
+    "name": "Carpeta N°3 Con Cierre",
+    "price": 1700,
+    "stock": 59,
+    "img": "/img/carpeta2.jpg",
+    "description": "Carpeta lomo de cuerina, tapa de tela",
+    "categoria": "Carpetas"
+},
+{
+    "id": 11,
+    "name": "Mochila Azul C/Puntos",
+    "price": 5600,
+    "stock": 15,
+    "img": "/img/mochila2.jpg",
+    "description": "Mochila básica estampada con bolsillo externo",
+    "categoria": "Mochilas"
+},
+{
+    "id": 12,
+    "name": "Carpeta Big Pocket Avengers",
+    "price": 1700,
+    "stock": 59,
+    "img": "/img/carpeta4.jpg",
+    "description": "Carpeta A3 con estampa",
+    "categoria": "Carpetas"
+}
+]
