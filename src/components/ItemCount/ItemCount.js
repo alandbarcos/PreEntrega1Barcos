@@ -21,9 +21,7 @@ const ItemCount = () => {
             <h3>Cantidad</h3>
             <button onClick={decrementar} className="btn btn-secondary m-3">-</button>
             <span>{counter}</span>
-            <button onClick={incrementar} className="btn btn-secondary m-3">+</button>
-            
-            
+            <button onClick={incrementar} className="btn btn-secondary m-3">+</button>    
         </div>
     )
 }

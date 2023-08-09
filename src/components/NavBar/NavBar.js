@@ -22,19 +22,19 @@ function NavBar() {
                 <Nav.Link as ={NavLink} to="/">Inicio</Nav.Link>
                 <NavDropdown title="Catálogo" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3"></NavDropdown.Item>
-                <NavDropdown.Item as ={NavLink} to="/categoria/Mochilas">
+                <NavDropdown.Item as ={NavLink} to="/category/Mochilas">
                     Mochilas
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item as ={NavLink} to="/categoria/Cartucheras">
+                <NavDropdown.Item as ={NavLink} to="/category/Cartucheras">
                     Cartucheras
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item as ={NavLink} to="/categoria/Marcadores">
+                <NavDropdown.Item as ={NavLink} to="/category/Marcadores">
                     Marcadores
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item as ={NavLink} to="/categoria/Carpetas">
+                <NavDropdown.Item as ={NavLink} to="/category/Carpetas">
                     Carpetas
                 </NavDropdown.Item>
                 </NavDropdown>
