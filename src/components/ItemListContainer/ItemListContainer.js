@@ -8,7 +8,6 @@ import "./ItemListContainer.css"
 
 const ItemListContainer = () => {
     const [item, setItem] = useState([]);
-    const {id} = useParams();
     const {categoria} = useParams();
 
     useEffect(()=>{
@@ -22,12 +21,12 @@ const ItemListContainer = () => {
                     })
                 );
             })
-    }, [])
+    }, [categoria])
 
     return (
     <div className='container'>
         <div className='row'>
-            <h1>{id}</h1>
+            <h1>{categoria}</h1>
         <ItemList item={item}/>
         </div>
         
