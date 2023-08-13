@@ -70,6 +70,9 @@ const Cart = () => {
 
   return (
     <div className='column' id="cart">
+      {
+      cart.length > 0 ?
+      <>
       <h1>{`Tenes ${cart.length} productos agregados a tu carrito.`}</h1>
           <div className='cartcontainer'>
             {
@@ -89,17 +92,16 @@ const Cart = () => {
             ))
             }
           </div>
-        {  
-            cart.length > 0 ?
-            <>
                 <h2>Precio total: ${totalPrice()}</h2>
                 <div className='buttonContainer'>
                   <button className="btn btn-warning" onClick={handleClear}>Vaciar</button>
                   <button className="btn btn-success" onClick={finalizePurchase}>Finalizar compra</button>
                 </div>
-                
-            </> :
-            <h2>El carrito está vacío :D</h2>
+      </>        
+                :
+          <div className='emptyCart'>     
+            <img src='https://www.distritomoda.com.ar/sites/all/themes/omega_btob/images/cartEmpty-20-10-2020.png' alt='Carrito Vacio'/>
+          </div>   
         }
         
     </div>

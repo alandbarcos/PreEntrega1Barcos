@@ -3,7 +3,33 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
+    margin-left: 0;
 }
 .label{
     width: 500px;
+}
+.formbox h2{
+    margin-bottom: 30px;
+}
+.formbox{
+    border: 1px solid grey;
+    padding: 40px;
+    border-radius: 15px;
+}
+.formbox button{
+    margin-top: 20px;
+}
+.endOfPurchase{
+    margin-top: 300px;
+    padding: 30px;
+    background:#f8d7da ;
+    color : #9a6c6e;
+    text-align:center;
+    font-size: large;
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

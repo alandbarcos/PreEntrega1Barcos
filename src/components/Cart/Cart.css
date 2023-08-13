@@ -23,5 +23,11 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-
+}
+.emptyCart{
+    margin-top: 200px;
+}
+.emptyCart img{
+    width: 65%;
+    height: 100%;
 }

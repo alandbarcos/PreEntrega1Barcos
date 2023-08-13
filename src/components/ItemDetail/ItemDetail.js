@@ -3,6 +3,7 @@ import ItemCount from '../ItemCount/ItemCount';
 import { CartContext } from '../../context/CartContext';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2'
+import './ItemDetail.css'
 
 const ItemDetail = ({item}) => {
   const {addToCart} = useContext(CartContext);
@@ -24,7 +25,7 @@ const ItemDetail = ({item}) => {
   return (
     <>
     <Link to={`/category/${item.category}`}>
-      <button>Volver a {item.category}</button>
+        <button className="btn btn-primary categoryButton">Volver a {item.category}</button>
     </Link>
     
     <div className='row p-3'>

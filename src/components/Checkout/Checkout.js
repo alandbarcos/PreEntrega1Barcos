@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import './Checkout.css'
 import { collection, addDoc, getFirestore} from 'firebase/firestore'
+import Swal from 'sweetalert2';
 
 const Checkout = () => {
 
@@ -40,8 +41,11 @@ const handleSubmit = (e) =>{
     generateOrder(data)
     console.log(data)
   }else{
-    console.log("Ingrese un email válido");
-    console.log("Email validado:"+emailValidation)
+    Swal.fire({
+      icon: 'error',
+      title: 'No podemos continuar',
+      text: 'Por favor verificá la confirmación de Email',
+    })
   }
 
 }
@@ -58,29 +62,33 @@ const generateOrder = async (data) => {
   return (
     <>
       {!orderId && <form onSubmit={handleSubmit}>
-        <h2>Completá tus datos</h2>
-      <FloatingLabel
-        label="Nombre"
-        className="mb-2"
-      >
-        <Form.Control type="text" name="Nombre" placeholder='Nombre' value={Nombre} onChange={handleInputChange} required className='label'/>
-      </FloatingLabel>
-      <FloatingLabel label="Email" className="mb-2">
-        <Form.Control type="email" name="Email" placeholder='Email' value={Email} onChange={handleInputChange} required className='label'/>
-      </FloatingLabel>
-      <FloatingLabel label="Confirmar Email" className="mb-2">
-        <Form.Control type="email" name="EmailValidation" placeholder='EmailValidation' value={emailValidation} onChange={handleInputChange} className='label'/>
-      </FloatingLabel>
-      <FloatingLabel label="Teléfono" className="mb-2">
-        <Form.Control type="number" name="Telefono" placeholder='Teléfono' value={Telefono} onChange={handleInputChange} required className='label'/>
-      </FloatingLabel>
-      <Button type="submit">Confirmar compra</Button>
+          <div className='formbox'>
+          <h2>Completá tus datos</h2>
+            <FloatingLabel
+              label="Nombre"
+              className="mb-2"
+            >
+              <Form.Control type="text" name="Nombre" placeholder='Nombre' value={Nombre} onChange={handleInputChange} required className='label'/>
+            </FloatingLabel>
+            <FloatingLabel label="Email" className="mb-2">
+              <Form.Control type="email" name="Email" placeholder='Email' value={Email} onChange={handleInputChange} required className='label'/>
+            </FloatingLabel>
+            <FloatingLabel label="Confirmar Email" className="mb-2">
+              <Form.Control type="email" name="EmailValidation" placeholder='EmailValidation' value={emailValidation} onChange={handleInputChange} className='label'/>
+            </FloatingLabel>
+            <FloatingLabel label="Teléfono" className="mb-2">
+              <Form.Control type="number" name="Telefono" placeholder='Teléfono' value={Telefono} onChange={handleInputChange} required className='label'/>
+            </FloatingLabel>
+            <Button type="submit">Confirmar compra</Button>
+        </div>
       </form>
+          
+        
       }
-      {orderId && <>
-                <h1>Felicitaciones tu compra se realizo con exito</h1>
+      {orderId && <div className='container endOfPurchase'>
+                <h1>¡Felicitaciones tu compra se realizo con exito!</h1>
                 <h3>Tu ID de Compra es: {orderId}</h3>
-            </>}
+            </div>}
     </>
   )
 }

@@ -19,7 +19,7 @@ const ItemDetailContainer = () => {
           {...res.data(),id:res.id}
           )
       })
-}, [])
+}, [id])
 
   return (
     <div className='container'>

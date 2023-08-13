@@ -1,0 +1,6 @@
+.categoryButton{
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+    font-style: none;
+}
