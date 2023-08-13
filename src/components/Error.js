@@ -1,8 +1,9 @@
 import React from 'react'
+import './Error.css'
 
 const Error = () => {
   return (
-    <div>Error 404 Not Found</div>
+    <img className="error" src="/img/error404.jpg" alt="Error404"/>
   )
 }
 

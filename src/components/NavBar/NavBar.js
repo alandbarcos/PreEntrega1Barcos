@@ -14,31 +14,32 @@ function NavBar() {
             <Navbar.Brand as ={NavLink} className="navLogo" to="/"><img src="/logo.jpeg" alt="Logo"/></Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
-            <Nav
+            <Nav 
                 className="me-auto my-2 my-lg-0"
                 style={{ maxHeight: '100px' }}
                 navbarScroll
             >
-                <Nav.Link as ={NavLink} to="/">Inicio</Nav.Link>
-                <NavDropdown title="Catálogo" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3"></NavDropdown.Item>
-                <NavDropdown.Item as ={NavLink} to="/category/Mochilas">
-                    Mochilas
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item as ={NavLink} to="/category/Cartucheras">
-                    Cartucheras
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item as ={NavLink} to="/category/Marcadores">
-                    Marcadores
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item as ={NavLink} to="/category/Carpetas">
-                    Carpetas
-                </NavDropdown.Item>
-                </NavDropdown>
-                <Nav.Link as ={NavLink} to="/contacto">Contacto</Nav.Link>
+                <div className='navitems'>
+                    <Nav.Link as ={NavLink} to="/">Inicio</Nav.Link>
+                    <NavDropdown title="Catálogo" id="navbarScrollingDropdown">
+                    <NavDropdown.Item href="#action3"></NavDropdown.Item>
+                    <NavDropdown.Item as ={NavLink} to="/category/Mochilas">
+                        Mochilas
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item as ={NavLink} to="/category/Cartucheras">
+                        Cartucheras
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item as ={NavLink} to="/category/Marcadores">
+                        Marcadores
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item as ={NavLink} to="/category/Carpetas">
+                        Carpetas
+                    </NavDropdown.Item>
+                    </NavDropdown>
+                </div>
             </Nav>
             </Navbar.Collapse>
             <CartWidget/>

@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 
 export const CartProvider = ({children}) => {
 
-    const [cart,setCart] = useState([]);
+    const [cart,setCart] = useState(JSON.parse(localStorage.getItem("cart")) || []);
 
     const addToCart = (item, quantity) => {
         const addedProduct = {...item,quantity};
@@ -16,10 +16,16 @@ export const CartProvider = ({children}) => {
                     console.log("Nuevo producto agregado al carrito")
                 }
                 setCart(newCart);
-        console.log(cart)
-
+                localStorage.setItem("cart", JSON.stringify(newCart));
+        
     }
+    console.log(cart)
 
+    const removeFromCart = (productId) =>{
+        const updatedCart = cart.filter((item) => item.id !== productId)
+            setCart(updatedCart);
+            localStorage.setItem("cart", JSON.stringify(updatedCart));
+        };
     const quantityOnCart = () => {
         return cart.reduce((acc, prod) => acc + prod.quantity, 0);
     }
@@ -34,7 +40,7 @@ export const CartProvider = ({children}) => {
     
 
   return (
-    <CartContext.Provider value={{cart,addToCart,quantityOnCart,totalPrice,clearCart}}>
+    <CartContext.Provider value={{cart,addToCart,quantityOnCart,totalPrice,clearCart,removeFromCart}}>
         {children}
     </CartContext.Provider>
   )

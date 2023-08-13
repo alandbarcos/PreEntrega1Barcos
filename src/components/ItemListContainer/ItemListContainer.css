@@ -6,3 +6,8 @@
 .container h1{
     font-size: 50px;
 }
+.principalContainer{
+    background-color: #bed6c7;
+    height: 100%;
+    width: 100%;
+}
